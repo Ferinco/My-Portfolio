@@ -18,7 +18,7 @@ export default function WriteUp(): JSX.Element {
                             design-focused teams to build transformative websites and
                             microsites that leave a lasting impression.
                         </p>
-                        <div>Check Projects</div>
+                        {/* <div>Check Projects</div> */}
                     </div>
                 </div>
                 <div className="flex flex-row gap-7 w-100 lg:mt-10">
