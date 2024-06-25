@@ -6,7 +6,7 @@ import ProjectsSection from '../components/projectsSection'
 
 export default function Home(): JSX.Element {
   return (
-    <div>
+    <div className='Home lg:py-8'>
         <HeroSection/>
         <PhotoGrid/>
         <WriteUp/>

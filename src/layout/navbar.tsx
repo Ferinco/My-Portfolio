@@ -28,7 +28,7 @@ export default function Navbar(): JSX.Element {
             <div className='logo-div w-[100px] h-[50px] bg-[#679046]'></div>
             <div className='flex flex-row gap-8 justify-end items-end'>
                 {NavLinks.map((link, index) => (
-                    <a href={link.path} key={index} className='flex flex-col items-start leading-4'>
+                    <a href={link.path} key={index} className='flex flex-col items-start leading-4 nav-link'>
                         <span className='text-[10px]'>
                             {link.num}
                         </span>

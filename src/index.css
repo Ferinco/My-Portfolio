@@ -9,7 +9,10 @@ body {
   background-color: #EBEBEB;
 
 }
-
+.Home{
+  background-color: transparent;
+  background-image: radial-gradient(circle, rgb(43, 43, 43) 0.1px, transparent 1px);
+  background-size: 10px 10px; }
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -31,4 +34,29 @@ h2{
 }
 .email-link{
   color: rgb(0, 105, 255) !important;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: grey;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+.nav-link:not(:hover)::after {
+  width: 0;
+  left: auto;
+  right: 0;
 }
