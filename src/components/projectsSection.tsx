@@ -7,10 +7,10 @@ export default function ProjectsSection(): JSX.Element {
         <h2 className="lg:text-[10rem] leading-none text-[7rem] md:text-[8rem] text-start">
           Selected Projects.
         </h2>
-        <div className="flex flex-row gap-7 w-100">
+        <div className="flex flex-col lg:flex-row gap-7 w-100">
           <div className="hidden-image border-8 border-black w-48 h-1 mt-2"></div>
-          <div className="flex flex-row justify-between flex-wrap w-full items-end">
-            <p className="text-start max-w-2xl text-2xl">
+          <div className="flex flex-row justify-between gap-7 flex-wrap w-full items-end">
+            <p className="text-start max-w-[600px] text-xl lg:text-2xl">
               I've had the opportunity to work on some exciting projects over
               the years, and here are a few of my favorites. Explore how I've
               transformed concepts into tangible results. Discover the stories

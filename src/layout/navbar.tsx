@@ -10,7 +10,7 @@ const NavLinks: Array<Link> = [
     {
         num: 1,
         name: "About",
-        path: "/"
+        path: "/about"
     },
     {
         num: 2,
@@ -38,7 +38,7 @@ export default function Navbar(): JSX.Element {
                     </a>
                 ))
                 }
-                <Icon icon="fluent:arrow-turn-down-left-48-regular" width="1.7em" height="1.7em"  style={{color: "black"}} className='lg:flex ml-14'/>
+                <Icon icon="fluent:arrow-turn-down-left-48-regular" width="1.7em" height="1.7em"  style={{color: "black"}} className='lg:flex lg:ml-14'/>
             </div>
         </div>
     )

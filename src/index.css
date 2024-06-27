@@ -6,21 +6,24 @@ body {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #EBEBEB;
+  /* background-color: #EBEBEB; */
+  background-color: #f2f2f2;
+
+  cursor:default;
 
 }
 .Home{
   background-color: transparent;
-  background-image: radial-gradient(circle, rgb(43, 43, 43) 0.1px, transparent 1px);
+  background-image: radial-gradient(circle, #679046 0.1px, transparent 1px);
   background-size: 10px 10px; }
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
 span, p, h1,h2, h3, h4, h5 ,h6{
-  margin: 0 !important;
+  margin: 0;
 }
-h1{
+h1, .site-name{
   font-family: 'Bebas Neue', sans-serif;
   /* font-weight: 900; */
 }
@@ -32,6 +35,11 @@ h2{
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 700;
 }
+/* h4{
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 700;
+  text-transform: lowercase !important;
+} */
 .email-link{
   color: rgb(0, 105, 255) !important;
 }

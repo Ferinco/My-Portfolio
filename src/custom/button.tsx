@@ -15,10 +15,13 @@ export default function Button(props: any): JSX.Element {
         <a className={`${props.className} cursor-pointer`} href={props.link}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
+            target={props.target}
+
         >
             {props.title}
             <Icon icon={"ep:top-right"} width="1.2em" height="1.2em" style={{ color: "black" }}
                  className={`${hovered === props.id ? "rotate-45 transition-all duration-300" : "rotate-0 transition-all duration-300"} ${props.iconSize}`}
+
             />
         </a>
     )
