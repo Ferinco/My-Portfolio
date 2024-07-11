@@ -1,7 +1,7 @@
-export default function ProjectTile():JSX.Element{
+export default function ProjectTile( props :any):JSX.Element{
     return(
-        <div className="h-[493px] rounded-[15px] flex flex-col p-0 justify-between">
-        <img src="/images/ferinstore.png" className="rounded-[15px] w-full h-full object-contain content-center"/>
+        <div className="h-[600px] rounded-[15px] flex flex-col p-0 justify-between w-full">
+        <img src={props.image} className="rounded-[15px] w-full h-full object-contain content-center"/>
 
         </div>
     )

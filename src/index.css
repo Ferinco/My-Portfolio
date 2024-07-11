@@ -12,10 +12,20 @@ body {
   cursor:default;
 
 }
+::-webkit-scrollbar{
+  display: none !important;
+}
+.project-img{
+  
+}
 .Home{
   background-color: transparent;
   background-image: radial-gradient(circle, #679046 0.1px, transparent 1px);
   background-size: 10px 10px; }
+  .Project{
+    background-color: transparent;
+    background-image: radial-gradient(circle, #679046 0.1px, transparent 1px);
+    background-size: 10px 10px; }
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

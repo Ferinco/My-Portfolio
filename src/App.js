@@ -18,9 +18,9 @@ function App() {
   }, []);
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <Preloader />
-      ) : (
+      ) : ( */}
         <div className="App container overflow-x-hidden">
           <BrowserRouter>
             <Navbar />
@@ -32,7 +32,7 @@ function App() {
             <Footer />
           </BrowserRouter>
         </div>
-      )}
+      {/* )} */}
     </>
   );
 }

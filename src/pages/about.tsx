@@ -1,22 +1,27 @@
+import { Icon } from "@iconify/react";
+import PhotoGrid from "../components/photoGrid";
 import Button from "../custom/button";
 
 export default function About(): JSX.Element {
     return (
         <div className='Home pt-1 pb-10  mt-[70px]'>
             <div className='sm:px-0 md:px-6 lg:px-8 xl:px-6 overflow-x-hidden overflow-y-hidden'>
-                <h4 className="text-start text-[17rem] font-medium tracking-tighter">About</h4>
-                <div className="flex flex-row justify-between">
-                    <div className="flex flex-col text-start text-7xl w-[40%]">
+                <div className="flex flex-row gap-10 items-baseline">
+                <h4 className="text-start lg:text-[17rem] text-[6rem] sm:text-[8rem] md:text-[14rem] font-medium tracking-tighter">About </h4>
+                <Icon icon="fluent:arrow-turn-right-down-48-regular" width="35px" height="30px"  style={{color: "black"}}/>
+                </div>
+                <div className="flex flex-col lg:flex-row justify-between lg:mt-0 mt-[70px]">
+                    <div className="flex flex-col text-start text-5xl lg:text-7xl w-[40%]">
                         <p>Plan.</p>
                         <p>Code.</p>
                         <p>Innovate.</p>
                     </div>
-                    <div className="flex flex-col text-start w-[55%] gap-4">
-                        <p className="text-3xl">design we ddghd ghjgshgs abd intreriuis streetscaoes and bak=dbscpaw graphics and way finsing we jabe 65 prosionalls ins sufgdw uy wygwuwuwgw gwyugyww gyu</p>
+                    <div className="flex flex-col text-start lg:w-[55%] gap-4">
+                        <p className="text-3xl lg:mt-0 mt-10">Driven by the passion to always outdo myself in delivering appealing and user-friendly websites that don't just meet the demand of the users, but alse engage and inspire them.</p>
                         <div className="flex flex-row flex-wrap justify-between text-base">
-                            <p className="w-[300px] mt-4">bsgdgwd iweguywgewbgu uguwigeuwgiu uguywgfuyegw uegwuegfwyg uguygwgyug yuw gvyugyugfwue guywfdgfwdu </p>
-                            <p className="w-[300px] mt-4">bsgdgwd iweguywgewbgu uguwigeuwgiu uguywgfuyegw uegwuegfwyg uguygwgyug yuw gvyugyugfwue guywfdgfwdu </p>
-                            <p className="w-[300px] mt-4">bsgdgwd iweguywgewbgu uguwigeuwgiu uguywgfuyegw uegwuegfwyg uguygwgyug yuw gvyugyugfwue guywfdgfwdu </p>
+                            <p className="lg:w-[280px] w-full mt-4">With my in-depth knowledge of various front-end technologies, I am able to bring designs to life. Being able to innovate when and after I plan and code has always helped me stand out. </p>
+                            <p className="lg:w-[280px] w-full mt-4">Whether I am working on a small project for a local business or a large-scale application for a global brand, I approach each task with the same level of enthusiasm and attention to detail.</p>
+                            <p className="lg:w-[300px] mt-4">I am constantly learning and adapting to new technologies and trends in order to stay ahead of the curve and deliver the best possible results for my clients. </p>
                         </div>
                     </div>
                 </div>
@@ -30,9 +35,13 @@ export default function About(): JSX.Element {
 
                     </div>
                 </div>
-                <div className="employ flex flex-row mt-20 h-fit justify-between">
+                {/* <div className="mt-[70px]">
 
-                <div className="flex flex-col text-start gap-24">
+                <PhotoGrid/>
+                </div> */}
+                <div className="employ flex flex-col lg:flex-row mt-20 h-fit justify-between">
+
+                <div className="flex flex-col text-start lg:gap-24 gap-4">
                     <p>Hire me</p>
                     <div className="flex flex-col gap-3">
                     <p className="text-2xl">Would you like to hire me?</p>
@@ -40,7 +49,7 @@ export default function About(): JSX.Element {
                     <a className="text-start text-sm text-[rgb(0, 105, 255)] email-link font-semibold">Hire me</a>
                     </div>
                 </div>
-                <div className="flex flex-col text-start gap-24">
+                <div className="flex flex-col text-start mt-12 lg:mt-0 lg:gap-24 gap-4">
                     <p>Contact</p>
                     <div>
                     <p className="text-2xl">Send me an email</p>
