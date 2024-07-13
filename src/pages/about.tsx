@@ -16,12 +16,12 @@ export default function About(): JSX.Element {
                         <p>Code.</p>
                         <p>Innovate.</p>
                     </div>
-                    <div className="flex flex-col text-start lg:w-[55%] gap-4">
-                        <p className="text-3xl lg:mt-0 mt-10">Driven by the passion to always outdo myself in delivering appealing and user-friendly websites that don't just meet the demand of the users, but alse engage and inspire them.</p>
+                    <div className="flex flex-col text-start lg:w-[55%] gap-3">
+                        <p className="text-2xl lg:mt-0 mt-10">Driven by the passion to always outdo myself in delivering appealing and user-friendly websites that don't just meet the demand of the users, but alse engage and inspire them.</p>
                         <div className="flex flex-row flex-wrap justify-between text-base">
-                            <p className="lg:w-[280px] w-full mt-4">With my in-depth knowledge of various front-end technologies, I am able to bring designs to life. Being able to innovate when and after I plan and code has always helped me stand out. </p>
-                            <p className="lg:w-[280px] w-full mt-4">Whether I am working on a small project for a local business or a large-scale application for a global brand, I approach each task with the same level of enthusiasm and attention to detail.</p>
-                            <p className="lg:w-[300px] mt-4">I am constantly learning and adapting to new technologies and trends in order to stay ahead of the curve and deliver the best possible results for my clients. </p>
+                            <p className="lg:w-[280px] w-full mt-2">With my in-depth knowledge of various front-end technologies, I am able to bring designs to life. Being able to innovate when and after I plan and code has always helped me stand out. </p>
+                            <p className="lg:w-[280px] w-full mt-2">Whether I am working on a small project for a local business or a large-scale application for a global brand, I approach each task with the same level of enthusiasm and attention to detail.</p>
+                            <p className="lg:w-[300px] mt-3">I am constantly learning and adapting to new technologies and trends in order to stay ahead of the curve and deliver the best possible results for my clients. </p>
                         </div>
                     </div>
                 </div>

@@ -1,49 +1,14 @@
 import { Icon } from "@iconify/react";
 import Button from "../custom/button";
 import ProjectTile from "../custom/projectTile";
-interface Project {
-    image: string,
-    title: string,
-    about: string,
-    url: string,
-    role: string
-}
-const ProjectData: Array<Project> = [
-    {
-        image: "/images/ferinstore.png",
-        title: "clothify",
-        about: "erhe hiueir huihe uire ipe pier ipriewh pihe ipyewuhp ipuyrf rfphruifhr dhgedu uiehd eue uehuegd",
-        url: "www.ferinstore.netlify.app",
-        role: "A"
-    },
-    {
-        image: "/images/seemax.png",
-        title: "seemax",
-        about: "erhe hiueir huihe uire ipe pier ipriewh pihe ipyewuhp ipuyrf rfphruifhr dhgedu uiehd eue uehuegd",
-        url: "www.ferinco.com",
-        role: "B"
-    },
-    {
-        image: "/images/ferinco.png",
-        title: "Ferinco's Portfolio Website",
-        about: "erhe hiueir huihe uire ipe pier ipriewh pihe ipyewuhp ipuyrf rfphruifhr dhgedu uiehd eue uehuegd",
-        url: "www.ferinco.com",
-        role: "C"
-    },
-    {
-        image: "/images/fgms.png",
-        title: "Firdaus-Gate Model Schools",
-        about: "erhe hiueir huihe uire ipe pier ipriewh pihe ipyewuhp ipuyrf rfphruifhr dhgedu uiehd eue uehuegd",
-        url: "www.firdausgateschools.com",
-        role: "D"
-    },
-]
+import { ProjectData } from "../Data";
+
 
 
 
 export default function Projects(): JSX.Element {
     return (
-        <div className='Project pt-1 pb-10  mt-[70px]'>
+        <div className='Home pt-1 pb-10  mt-[70px]'>
             <div className='sm:px-0 md:px-6 lg:px-8 xl:px-6 overflow-x-hidden overflow-y-hidden'>
                 <div className="flex flex-row gap-10 items-baseline">
                     <h4 className="text-start lg:text-[15rem] text-[6rem] sm:text-[8rem] md:text-[14rem] font-medium tracking-tighter">Projects</h4>
@@ -67,24 +32,25 @@ export default function Projects(): JSX.Element {
 
                                 </div>
 
-                            <div className={index % 2 === 0 ? "flex flex-row justify-between items-end mt-16" : "flex flex-row-reverse justify-between items-end mt-16"}>
+                            <div className={"flex flex-col justify-between items-end mt-16"}>
                                 <div className="w-[100%] rounded-[15px] project-img">
-                                    <ProjectTile image={project.image} />
+                                    <ProjectTile image={project.image} link={`/work/${project.subtitle}`}/>
                                 </div>
-                                {/* <div className="w-[19%] flex flex-col gap-5">
-                                    <div>
-                                        <h6 className={`${index % 2 === 0 ? "text-end site-name text-5xl" : "text-start site-name text-5xl"}`}>{project.title}</h6>
-                                        <p className={index % 2 === 0 ? "text-start" : "text-end"}>{project.about}</p>
+                                 <div className="w-[100%] flex flex-row justify-between items-start mt-7">
+                                    <div className="lg:w-[33%]">
+                                        <h6 className={"text-start site-name text-2xl"}>{project.title}</h6>
                                     </div>
-                                    <div className={index % 2 === 0 ? "flex flex-row items-center justify-end gap-5" : "flex flex-row-reverse items-center justify-end gap-5"}>
-                                        <Button title="Visit Site" link={project.url} id="cap" className="flex items-center justify-center m-0 text-center gap-1 py-1 px-2 h-fit rounded-full bg-transparent border border-black text-black transition-all  duration-300 w-fit font-semibold text-[14px]"
-                                            iconSize="text-[12px]"
+                                    <div className="lg:w-[33%]">
+                                        <p className={"text-start text-lg font-medium text-black"}>{project.about}</p>
+                                    </div>
+                                    <div className={"flex flex-row items-center justify-center gap-5 lg:w-[33%]"}>
+                                        <Button title="Visit Site" link={project.url} id="cap" className="flex items-center gap-2 lg:py-2 py-3 lg:px-10 px-5 rounded-full bg-transparent border border-black text-black transition-all  duration-300 w-fit font-medium"
+                                            iconSize="text-[14px]"
                                             target="_blank"
                                         >
                                         </Button>
-                                        <p>[ ]</p>
                                     </div>
-                                </div> */}
+                                </div> 
                             </div>
                             </div>
 

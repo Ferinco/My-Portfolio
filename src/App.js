@@ -8,19 +8,12 @@ import Preloader from "./custom/preloader";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import About from "./pages/about";
 import Projects from "./pages/projects";
+import Details from "./pages/projectDetails";
 function App() {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-    setLoading(true);
-  }, []);
+
   return (
     <>
-      {/* {loading ? (
-        <Preloader />
-      ) : ( */}
+
         <div className="App container overflow-x-hidden">
           <BrowserRouter>
             <Navbar />
@@ -28,11 +21,11 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/work" element={<Projects />} />
+              <Route path="/work/:subtitle" element={<Details />} />
             </Routes>
             <Footer />
           </BrowserRouter>
         </div>
-      {/* )} */}
     </>
   );
 }
