@@ -1,4 +1,4 @@
-interface Project {
+interface ProjectInfo {
     image: string,
     title: string,
     subtitle: string,
@@ -6,7 +6,14 @@ interface Project {
     url: string,
     role: string
 }
-export const ProjectData: Array<Project> = [
+interface ProjectImage {
+    firstBanner: string,
+    firstMobile: string,
+    secondBanner: string,
+    secondMobile: string,
+    subtitle: string,
+}
+export const ProjectData: Array<ProjectInfo> = [
     {
         image: "/images/ferinstore.png",
         title: "clothify",
@@ -41,4 +48,36 @@ export const ProjectData: Array<Project> = [
         url: "www.firdausgateschools.com",
         role: "D"
     },
+]
+
+export const ProjectImages: Array<ProjectImage> = [
+    {
+        firstBanner: "/images/ferinstore/banner1.png",
+        firstMobile: "/images/ferinstore/mobile1.png",
+        secondBanner: "/images/ferinstore/banner2.png",
+        secondMobile: "www.ferinstore.netlify.app",
+        subtitle: "clothify",
+    },
+    {
+        firstBanner: "/images/ferinstore/mobile1.png",
+        firstMobile: "",
+        secondBanner: "",
+        secondMobile: "",
+        subtitle: "seemax",
+    }, {
+        firstBanner: "/images/ferinstore.png",
+        firstMobile: "",
+        secondBanner: "",
+        secondMobile: "",
+        subtitle: "ferinco",
+    }, {
+        firstBanner: "/images/ferinstore.png",
+        firstMobile: "",
+        secondBanner: "",
+        secondMobile: "",
+        subtitle: "fgms",
+    },
+
+
+
 ]

@@ -14,15 +14,17 @@ function App() {
   return (
     <>
 
-        <div className="App container overflow-x-hidden">
+        <div className="App overflow-x-hidden">
           <BrowserRouter>
             <Navbar />
+            <div className="container">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/work" element={<Projects />} />
               <Route path="/work/:subtitle" element={<Details />} />
             </Routes>
+            </div>
             <Footer />
           </BrowserRouter>
         </div>

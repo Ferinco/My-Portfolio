@@ -24,8 +24,10 @@ const NavLinks: Array<Link> = [
 ]
 export default function Navbar(): JSX.Element {
     return (
-        <div className='flex flex-col px-3 md:px-6 lg:px-8 xl:px-14 lg:gap-0 gap-6'>
-            <div className='logo-div w-[100px] h-[50px] bg-[#679046]'></div>
+        <div className='flex flex-col pr-3 md:pr-6 lg:pr-8 xl:pr-14 lg:gap-0 gap-6'>
+            <div className='logo-div w-[70px] h-[100px] bg-[#679046] mt-[30px] text-white flex flex-col'>
+                
+            </div>
             <div className='flex flex-row gap-8 justify-end items-end'>
                 {NavLinks.map((link, index) => (
                     <a href={link.path} key={index} className='flex flex-col items-start leading-4 nav-link'>
