@@ -4,7 +4,8 @@ interface ProjectInfo {
     subtitle: string,
     about: string,
     url: string,
-    role: string
+    role: string,
+    tools: string[]
 }
 interface ProjectImage {
     firstBanner: string,
@@ -21,7 +22,8 @@ export const ProjectData: Array<ProjectInfo> = [
 
         about: "Website to shop for clothes and clothing items",
         url: "www.ferinstore.netlify.app",
-        role: "A"
+        role: "A",
+        tools: ["reactjs,", "bootstrap css,", "context api"]
     },
     {
         image: "/images/seemax.png",
@@ -30,7 +32,9 @@ export const ProjectData: Array<ProjectInfo> = [
 
         about: "Website to view get the latest movie releases, search through popular choices and watch trailers.",
         url: "www.ferinco.com",
-        role: "B"
+        role: "B",
+        tools: ["reactjs,", "tailwind css,", "context api"]
+
     },
     {
         image: "/images/ferinco.png",
@@ -38,7 +42,9 @@ export const ProjectData: Array<ProjectInfo> = [
         subtitle: "ferinco",
         about: "A portfolio website built for myself.",
         url: "www.ferinco.com",
-        role: "C"
+        role: "C",
+        tools: ["typescript,", "tailwind css,", "context api"]
+
     },
     {
         image: "/images/fgms.png",
@@ -46,23 +52,25 @@ export const ProjectData: Array<ProjectInfo> = [
         subtitle: "fgms",
         about: "School webiste built for Firdaus-Gate Model Schools.",
         url: "www.firdausgateschools.com",
-        role: "D"
+        role: "D",
+        tools: ["reactjs,", "bootstrap css,", "redux", "context api"]
+
     },
 ]
 
 export const ProjectImages: Array<ProjectImage> = [
     {
-        firstBanner: "/images/ferinstore/banner1.png",
+        firstBanner: "/images/ferinstore/banner3.png",
         firstMobile: "/images/ferinstore/mobile1.png",
         secondBanner: "/images/ferinstore/banner2.png",
-        secondMobile: "www.ferinstore.netlify.app",
+        secondMobile: "/images/ferinstore/mobile2.png",
         subtitle: "clothify",
     },
     {
-        firstBanner: "/images/ferinstore/mobile1.png",
-        firstMobile: "",
-        secondBanner: "",
-        secondMobile: "",
+        firstBanner: "/images/seemax/banner1.png",
+        firstMobile: "/images/seemax/mobile1.png",
+        secondBanner: "/images/seemax/banner2.png",
+        secondMobile: "/images/seemax/mobile2.png",
         subtitle: "seemax",
     }, {
         firstBanner: "/images/ferinstore.png",
@@ -71,10 +79,10 @@ export const ProjectImages: Array<ProjectImage> = [
         secondMobile: "",
         subtitle: "ferinco",
     }, {
-        firstBanner: "/images/ferinstore.png",
-        firstMobile: "",
-        secondBanner: "",
-        secondMobile: "",
+        firstBanner: "/images/fgms/banner1.png",
+        firstMobile: "/images/fgms/mobile1.png",
+        secondBanner: "/images/fgms/banner2.png",
+        secondMobile: "/images/fgms/mobile2.png",
         subtitle: "fgms",
     },
 

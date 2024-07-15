@@ -6,7 +6,7 @@ import ProjectsSection from '../components/projectsSection'
 
 export default function Home(): JSX.Element {
   return (
-    <div className='Home py-9  mt-[70px]'>
+    <div className='Home py-9 mt-[70px]'>
         <HeroSection/>
         <PhotoGrid/>
         <WriteUp/>
