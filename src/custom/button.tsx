@@ -12,7 +12,7 @@ export default function Button(props: any): JSX.Element {
         setHovered("none")
     }
     return (
-        <a className={`${props.className} cursor-pointer`} href={props.link}
+        <a className={`${props.className} cursor-pointer general-btn`} href={props.link}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             target={props.target}

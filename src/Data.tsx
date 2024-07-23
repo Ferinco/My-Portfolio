@@ -5,15 +5,19 @@ interface ProjectInfo {
     about: string,
     url: string,
     role: string,
-    tools: string[]
+    tools: string[],
+    images: string[],
 }
 interface ProjectImage {
     firstBanner: string,
-    firstMobile: string,
     secondBanner: string,
-    secondMobile: string,
+    thirdBanner: string,
+    firstMobile: string,
     subtitle: string,
+    secondMobile: string,
 }
+
+
 export const ProjectData: Array<ProjectInfo> = [
     {
         image: "/images/ferinstore.png",
@@ -23,7 +27,8 @@ export const ProjectData: Array<ProjectInfo> = [
         about: "Website to shop for clothes and clothing items",
         url: "www.ferinstore.netlify.app",
         role: "A",
-        tools: ["reactjs,", "bootstrap css,", "context api"]
+        tools: ["reactjs,", "bootstrap css,", "context api"],
+        images: ["/images/ferinstore/banner3.png", "/images/ferinstore/banner2.png", "/images/ferinstore/banner2.png"]
     },
     {
         image: "/images/seemax.png",
@@ -33,7 +38,9 @@ export const ProjectData: Array<ProjectInfo> = [
         about: "Website to view get the latest movie releases, search through popular choices and watch trailers.",
         url: "www.ferinco.com",
         role: "B",
-        tools: ["reactjs,", "tailwind css,", "context api"]
+        tools: ["reactjs,", "tailwind css,", "context api"],
+        images: ["/images/seemax/banner3.png", "/images/seemax/banner2.png", "/images/seemax/banner1.png"]
+
 
     },
     {
@@ -43,7 +50,9 @@ export const ProjectData: Array<ProjectInfo> = [
         about: "A portfolio website built for myself.",
         url: "www.ferinco.com",
         role: "C",
-        tools: ["typescript,", "tailwind css,", "context api"]
+        tools: ["typescript,", "tailwind css,", "context api"],
+        images: ["/images/ferinstore/seemax3.png", "/images/ferinstore/seemax2.png", "/images/ferinstore/seemax2.png"]
+
 
     },
     {
@@ -53,7 +62,9 @@ export const ProjectData: Array<ProjectInfo> = [
         about: "School webiste built for Firdaus-Gate Model Schools.",
         url: "www.firdausgateschools.com",
         role: "D",
-        tools: ["reactjs,", "bootstrap css,", "redux", "context api"]
+        tools: ["reactjs,", "bootstrap css,", "redux", "context api"],
+        images: ["/images/ferinstore/seemax3.png", "/images/ferinstore/seemax2.png", "/images/ferinstore/seemax2.png"]
+
 
     },
 ]
@@ -61,27 +72,34 @@ export const ProjectData: Array<ProjectInfo> = [
 export const ProjectImages: Array<ProjectImage> = [
     {
         firstBanner: "/images/ferinstore/banner3.png",
-        firstMobile: "/images/ferinstore/mobile1.png",
         secondBanner: "/images/ferinstore/banner2.png",
+        thirdBanner: "/images/ferinstore/banner2.png",
         secondMobile: "/images/ferinstore/mobile2.png",
+        firstMobile: "/images/ferinstore/mobile1.png",
         subtitle: "clothify",
     },
     {
         firstBanner: "/images/seemax/banner1.png",
-        firstMobile: "/images/seemax/mobile1.png",
         secondBanner: "/images/seemax/banner2.png",
+        thirdBanner: "/images/ferinstore/banner2.png",
+        firstMobile: "/images/seemax/mobile1.png",
+
         secondMobile: "/images/seemax/mobile2.png",
         subtitle: "seemax",
     }, {
         firstBanner: "/images/ferinstore.png",
-        firstMobile: "",
         secondBanner: "",
+        thirdBanner: "/images/ferinstore/banner2.png",
+        firstMobile: "",
+
         secondMobile: "",
         subtitle: "ferinco",
     }, {
         firstBanner: "/images/fgms/banner1.png",
-        firstMobile: "/images/fgms/mobile1.png",
         secondBanner: "/images/fgms/banner2.png",
+        thirdBanner: "/images/ferinstore/banner2.png",
+
+        firstMobile: "/images/fgms/mobile1.png",
         secondMobile: "/images/fgms/mobile2.png",
         subtitle: "fgms",
     },
@@ -89,3 +107,4 @@ export const ProjectImages: Array<ProjectImage> = [
 
 
 ]
+

@@ -12,11 +12,26 @@ body {
   cursor:default;
 
 }
+.preloader-span{
+  font-weight: 600;
+  font-size: 40px;
+}
+.hire-btn{
+  box-shadow: rgba(0, 0, 0, 0.25) 0 2px;
+  z-index: 999 !important;
+  position: absolute;
+}
 ::-webkit-scrollbar{
   display: none !important;
 }
+p{
+  /* font-weight: 500; */
+}
 .project-img{
   /* box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
+}
+.project-tile :hover .icon{
+display: flex !important;
 }
 .project-name{
   line-height: 0.8;
@@ -50,7 +65,7 @@ span, p, h1,h2, h3, h4, h5 ,h6{
 }
 h1, .site-name{
   font-family: 'Bebas Neue', sans-serif;
-  /* font-weight: 900; */
+  /* font-weight: 600; */
 }
 .social-link{
   font-family: 'Bebas Neue', sans-serif;

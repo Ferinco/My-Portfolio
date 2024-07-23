@@ -1,14 +1,17 @@
 import { Icon } from "@iconify/react";
 import PhotoGrid from "../components/photoGrid";
 import Button from "../custom/button";
-
+import { motion } from 'framer-motion'
 export default function About(): JSX.Element {
     return (
-        <div className='Home pt-1 pb-10  mt-[70px]'>
+        <motion.div className='Home pt-1 pb-10  mt-[70px]'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.5 }}>
             <div className='sm:px-0 md:px-6 lg:px-8 xl:px-6 overflow-x-hidden overflow-y-hidden'>
                 <div className="flex flex-row gap-10 items-baseline">
-                <h4 className="text-start lg:text-[17rem] text-[6rem] sm:text-[8rem] md:text-[14rem] font-medium tracking-tighter">About </h4>
-                <Icon icon="fluent:arrow-turn-right-down-48-regular" width="35px" height="30px"  style={{color: "black"}}/>
+                    <h4 className="text-start lg:text-[17rem] text-[6rem] sm:text-[8rem] md:text-[14rem] font-medium tracking-tighter">About </h4>
+                    <Icon icon="fluent:arrow-turn-right-down-48-regular" width="35px" height="30px" style={{ color: "black" }} />
                 </div>
                 <div className="flex flex-col lg:flex-row justify-between lg:mt-0 mt-[70px]">
                     <div className="flex flex-col text-start text-5xl lg:text-7xl w-[40%]">
@@ -29,7 +32,7 @@ export default function About(): JSX.Element {
                     <div className="image-1 border-2 border-red-500 w-[70%] h-[400px]"></div>
                     <div className="flex flex-col h-[400px] w-[27%] justify-between">
                         <div className="border-2 border-red-500 h-[40%]">
-                            
+
                         </div>
                         <div className="border-2 border-red-500 h-[57%]"></div>
 
@@ -41,24 +44,24 @@ export default function About(): JSX.Element {
                 </div> */}
                 <div className="employ flex flex-col lg:flex-row mt-20 h-fit justify-between">
 
-                <div className="flex flex-col text-start lg:gap-24 gap-4">
-                    <p>Hire me</p>
-                    <div className="flex flex-col gap-3">
-                    <p className="text-2xl">Would you like to hire me?</p>
-                    <p className="text-3xl w-[400px]">I am definitly that addition your team needs, I bring the skills, talent and creativity.</p>
-                    <a className="text-start text-sm text-[rgb(0, 105, 255)] email-link font-semibold">Hire me</a>
+                    <div className="flex flex-col text-start lg:gap-24 gap-4">
+                        <p>Hire me</p>
+                        <div className="flex flex-col gap-3">
+                            <p className="text-2xl">Would you like to hire me?</p>
+                            <p className="text-3xl w-[400px]">I am definitly that addition your team needs, I bring the skills, talent and creativity.</p>
+                            <a className="text-start text-sm text-[rgb(0, 105, 255)] email-link font-semibold">Hire me</a>
+                        </div>
                     </div>
-                </div>
-                <div className="flex flex-col text-start mt-12 lg:mt-0 lg:gap-24 gap-4">
-                    <p>Contact</p>
-                    <div>
-                    <p className="text-2xl">Send me an email</p>
-                    <a className="text-start text-3xl text-[rgb(0, 105, 255)] email-link">ferinco001@gmail.com</a>
-                    {/* <p>Hire me, so I can afford starlink.</p> */}
+                    <div className="flex flex-col text-start mt-12 lg:mt-0 lg:gap-24 gap-4">
+                        <p>Contact</p>
+                        <div>
+                            <p className="text-2xl">Send me an email</p>
+                            <a className="text-start text-3xl text-[rgb(0, 105, 255)] email-link">ferinco001@gmail.com</a>
+                            {/* <p>Hire me, so I can afford starlink.</p> */}
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }

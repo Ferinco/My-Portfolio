@@ -75,7 +75,7 @@ export default function Footer(): JSX.Element {
                     <div className="flex flex-col text-start lg:w-[42%] md:w-[60%]">
                         <p className="text-start text-2xl">
                             I'm currently seeking a full-time position but I am also available for gigs and freelance work. Send me an email to hire me, let's create something amazing together.                        </p>
-                        <a className="text-start text-3xl text-[rgb(0, 105, 255)] email-link">ferinco001@gmail.com</a>
+                        <a className="text-start text-3xl text-[rgb(0, 105, 255)] email-link text-wrap">ferinco001@gmail.com</a>
                     </div>
                     <div className="flex flex-col lg:w-[20%] gap-2 md:w-[35%] w-[100%]">
                         {
