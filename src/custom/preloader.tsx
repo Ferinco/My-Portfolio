@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import Button from "./button"
 export default function Preloader(): JSX.Element {
   return (
-    <div className='w-screen absolute h-screen top-0 left-0 bg-[#ebebeb] z-[999] flex flex-col'>
+    <div className='w-screen h-screen top-0 left-0 bg-[#ebebeb] z-[999] flex flex-col fixed'>
       <div className="flex items-center justify-center w-full h-full">
 
       <motion.h1 className="preloader-span"

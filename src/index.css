@@ -8,7 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background-color: #EBEBEB; */
   background-color: #f2f2f2;
-
+    scroll-behavior: auto;
   cursor:default;
 
 }
@@ -107,4 +107,11 @@ h2{
   width: 0;
   left: auto;
   right: 0;
+}
+.active-link{
+ border-bottom: 1px solid grey;
+}
+.active-link :hover{
+
+  
 }

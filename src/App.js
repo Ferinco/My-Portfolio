@@ -14,35 +14,40 @@ import ZoomedDiv from "./custom/ZoomedDiv";
 import Gallery from "./pages/gallery";
 import Button from "./custom/button";
 import { motion } from "framer-motion";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import General from "./layout/general";
+import Contact from "./pages/contact";
+import NoFooter from "./layout/noFooterLayout";
 function App() {
   AOS.init();
-  const { openZoom } = useAppContext();
+  const { openZoom, active } = useAppContext();
+  console.log(active);
   return (
     <>
       {openZoom === false ? (
         <div className="flex flex-col">
           <div className="App overflow-x-hidden">
             <BrowserRouter>
-              <Navbar />
-              <div className="container">
-                <Routes>
-                  <Route path="/" element={<Home />} />
+              <Routes>
+                <Route path="/" element={<General />}>
+                  <Route index element={<Home />} />
                   <Route path="/about" element={<About />} />
                   <Route path="/work" element={<Projects />} />
                   <Route path="/work/:subtitle" element={<Details />} />
                   <Route path="/work/:subtitle/gallery" element={<Gallery />} />
-                </Routes>
-              </div>
-              <Footer />
+                </Route>
+                <Route path="/contact" element={<NoFooter />}>
+                  <Route index element={<Contact />} />
+                </Route>
+              </Routes>
             </BrowserRouter>
           </div>
           <motion.div
-            className="fixed w-screen h-screen flex justify-end items-end p-5"
+            className="fixed w-screen h-fit flex justify-end items-end p-5 bottom-0"
             initial={{ opacity: -10 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.9}}
+            transition={{ duration: 0.9 }}
           >
             <Button
               title="Hire Me!"

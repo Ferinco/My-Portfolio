@@ -7,6 +7,8 @@ interface AppContextTypes {
     setOpenZoom: (zoom: boolean) => void
     name: string
     setName: (name: string) => void
+    active: number
+    setActive: (active: number) => void
 
 }
 const AppContext = createContext<AppContextTypes | undefined>(undefined)
@@ -14,6 +16,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     const [zoomedImage, setZoomedImage] = useState("")
     const [openZoom, setOpenZoom] = useState(false)
     const [name, setName] = useState("")
+    const [active, setActive] = useState(0)
 
 
     return (
@@ -24,7 +27,9 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
                 openZoom,
                 setOpenZoom,
                 name,
-                setName
+                setName,
+                active,
+                setActive
             }}
         >
             {children}

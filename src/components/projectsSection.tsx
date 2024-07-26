@@ -25,7 +25,7 @@ export default function ProjectsSection(): JSX.Element {
               behind successful product designs that have made a significant
               impact.
             </p>
-            <Button title="View Projects" link="/projects" id="cap" className="flex items-center gap-2 lg:py-4 py-3 lg:px-10 px-5 rounded-full bg-transparent border border-black text-black transition-all  duration-300 w-fit font-medium">
+            <Button title="View Projects" link="/work" id="cap" className="flex items-center gap-2 lg:py-4 py-3 lg:px-10 px-5 rounded-full bg-transparent border border-black text-black transition-all  duration-300 w-fit font-medium">
 
             </Button>
           </div>

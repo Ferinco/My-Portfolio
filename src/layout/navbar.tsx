@@ -1,7 +1,8 @@
 import { Icon } from '@iconify/react';
 import { motion } from 'framer-motion';
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
+import { useAppContext } from '../context';
 interface Link {
     num: number;
     name: string;
@@ -24,16 +25,23 @@ const NavLinks: Array<Link> = [
     },
 ]
 export default function Navbar(): JSX.Element {
+    const {active, setActive} = useAppContext()
+    const location = useLocation();
+console.log(location.pathname)
     return (
         <div className='flex flex-col pr-3 md:pr-6 lg:pr-8 xl:pr-14 lg:gap-0 gap-6'>
-            <motion.div className="logo-div w-[70px] h-[100px] bg-[#679046] text-white flex flex-col"
+            <motion.a className="logo-div w-[70px] h-[100px] bg-[#679046] text-white flex flex-col cursor-pointer"
                 initial={{ x: -100}}
                 animate={{ x: 0 }}
                 transition={{ duration: 0.9 }}
-            ></motion.div>
+            href='/'
+            ></motion.a>
             <div className='flex flex-row gap-8 justify-end items-end z-[999]'>
                 {NavLinks.map((link, index) => (
-                    <a href={link.path} key={index} className='flex flex-col items-start leading-4 nav-link'>
+                    <a href={link.path} key={index} className={`flex flex-col items-start leading-4 ${location.pathname === link.path ? "active-link" : "nav-link"}`}
+                    onClick={()=>{
+                        setActive(link.num)
+                    }}>
                         <span className='text-[10px]'>
                             {link.num}
                         </span>
