@@ -44,7 +44,7 @@ console.log(openNavbar)
           className="lg:flex lg:ml-14"
         />
       </div>
-      <div className="flex md:hidden justify-end">
+      {/* <div className="flex md:hidden justify-end">
       <label htmlFor="check" onClick={()=>{
         setOpenNavbar(prev => !prev)
       }}>
@@ -52,7 +52,7 @@ console.log(openNavbar)
         <span></span>
         <span></span>
       </label>
-      </div>
+      </div> */}
     </div>
   );
 }
