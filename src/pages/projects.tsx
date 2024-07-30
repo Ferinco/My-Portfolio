@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 import Button from "../custom/button";
 import ProjectTile from "../custom/projectTile";
-import { ProjectData } from "../Data";
+import { ProjectData } from "../data/projectsData";
 import { Separation } from "../custom/separationDiv";
 import { motion } from "framer-motion"
 
@@ -16,7 +16,6 @@ export default function Projects(): JSX.Element {
             <div className='sm:px-0 md:px-6 lg:px-8 xl:px-6 overflow-x-hidden overflow-y-hidden px-3'>
                 <div className="flex flex-row gap-10 items-baseline">
                     <h4 className="text-start lg:text-[15rem] text-[6rem] sm:text-[8rem] md:text-[14rem] font-medium tracking-tighter">Projects</h4>
-
                     <Icon icon="fluent:arrow-turn-right-down-48-regular" width="35px" height="30px" style={{ color: "black" }} />
                 </div>
                 <div className="mt-[70px]">
@@ -60,6 +59,7 @@ export default function Projects(): JSX.Element {
                                                         <Button title="Visit Site" link={project.url} id="cap" className="text-xs lg:text-sm flex items-center gap-2 lg:py-2 py-1 lg:px-10 px-5 rounded-full bg-transparent border border-black text-black transition-all  duration-300 w-fit font-medium"
                                                             iconSize="text-[10px] lg:text-[14px]"
                                                             target="_blank"
+                                                            
                                                         >
                                                         </Button>
                                                 }

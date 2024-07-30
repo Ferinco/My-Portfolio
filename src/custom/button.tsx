@@ -16,6 +16,7 @@ export default function Button(props: any): JSX.Element {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             target={props.target}
+            rel="noopener noreferrer"
 
         >
             {props.title}

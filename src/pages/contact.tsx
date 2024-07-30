@@ -1,33 +1,8 @@
 import Button from "../custom/button";
+import { SocialLinks } from "../data/socials";
 
 export default function Contact(): JSX.Element {
-  interface Social {
-    id: number;
-    name: string;
-    path: string;
-  }
-  const SocialLinks: Array<Social> = [
-    {
-      id: 1,
-      name: "LINKEDLN",
-      path: "/",
-    },
-    {
-      id: 2,
-      name: "TWITTER",
-      path: "/work",
-    },
-    {
-      id: 3,
-      name: "INSTAGRAM",
-      path: "/contact",
-    },
-    {
-      id: 4,
-      name: "WHATSAPP",
-      path: "/contact",
-    },
-  ];
+
   return (
     <div>
         <div className="flex flex-col gap-5 mt-[100px]">
@@ -36,6 +11,7 @@ export default function Contact(): JSX.Element {
         gigs and freelance work. Send me an email to hire me, let's create
         something amazing together.
       </p>
+      <div>
       <h2
         className="lg:text-[10rem] leading-[0.9] text-[6rem] md:text-[8rem] text-center mt-10"
         data-aos="fade-in"
@@ -45,11 +21,13 @@ export default function Contact(): JSX.Element {
       >
         FERINCO001<br />@GMAIL.COM
       </h2>
-      <div className="flex justify-center items-center">
+      <h1>Ferinco "zero zero 1" @gmail.com</h1>
+      </div>
+      <div className="flex justify-center items-center mt-0 lg:mt-5">
         <Button
           title="Send Email"
-          link="/"
-          // id="cap"
+          link="mailto:ferinco001@gmail.com"
+          target="_blank"
           className="flex items-center gap-2 lg:py-4 py-3 lg:px-10 px-5 rounded-full bg-transparent border border-black text-black transition-all  duration-300 w-fit font-medium"
         ></Button>
       </div>
@@ -68,6 +46,8 @@ export default function Contact(): JSX.Element {
               id={social.name}
               title={social.name}
               iconSize="text-xl"
+              target="_target"
+              link={social.path}
             ></Button>
           ))}
         </div>

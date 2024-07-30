@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import { ProjectData, ProjectImages } from "../Data"
+import { ProjectData, ProjectImages } from "../data/projectsData"
 import { Icon } from "@iconify/react"
 import Button from "../custom/button"
 import { BigTile, SmallTile } from "../custom/imageTile"
@@ -10,7 +10,8 @@ export default function Details(): JSX.Element {
     const { subtitle } = useParams()
     const Project = ProjectData.filter((project) => project.subtitle === subtitle)
     const Images = ProjectImages.filter((project) => project.subtitle === subtitle)
-    const { setOpenZoom, setZoomedImage, setName } = useAppContext()
+    const { setOpenZoom, setZoomedImage, setName, openZoom } = useAppContext()
+    console.log(openZoom)
     return (
         <div className="Home sm:px-0 px-3 md:px-6 lg:px-8 xl:px-6 py-9 overflow-x-hidden overflow-y-hidden mt-[70px]">
             {
@@ -69,8 +70,10 @@ export default function Details(): JSX.Element {
                                                 <h1 className="flex text-3xl w-[10%] text-start">Project Images</h1>
                                             </div>
                                             <div className="flex flex-col-reverse gap-5 xl:gap-0 xl:flex-row-reverse justify-between mt-5">
-                                                <SmallTile image={image.firstMobile} role="B" flexType="flex-col items-end"></SmallTile>
-                                                <BigTile image={image.firstBanner} role="A" flexType="flex-col" ></BigTile>
+                                                <SmallTile image={image.firstMobile} role="B" flexType="flex-col items-end"
+                                                ></SmallTile>
+                                                <BigTile image={image.firstBanner} role="A" flexType="flex-col" 
+                                                 ></BigTile>
                                             </div>
                                             <div className="flex flex-col gap-5 xl:gap-0 xl:flex-row justify-between mt-5">
                                                 <SmallTile image={image.secondMobile} role="C" flexType="flex-col-reverse items-start"></SmallTile>

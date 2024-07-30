@@ -22,7 +22,6 @@ import NoFooter from "./layout/noFooterLayout";
 function App() {
   AOS.init();
   const { openZoom, active } = useAppContext();
-  console.log(active);
   return (
     <>
       {openZoom === false ? (
@@ -53,6 +52,8 @@ function App() {
               title="Hire Me!"
               iconSize="hidden"
               className="flex items-center gap-2 py-3 px-12 rounded-full  border bg-[#0069FF] border-[#0069FF] text-white text-sm w-fit font-medium hire-btn z-[999]"
+              link="mailto:ferinco001@gmail.com?subject=Inquiry&body=Hello%20Ferinco,%20I%20would%20like%20to%20hire%20you."
+              target="_blank"
             ></Button>
           </motion.div>
         </div>

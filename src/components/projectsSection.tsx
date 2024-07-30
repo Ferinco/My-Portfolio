@@ -3,8 +3,8 @@ import Button from "../custom/button";
 export default function ProjectsSection(): JSX.Element {
   return (
     <div className="px-3 md:px-6 lg:px-8 xl:px-14 mt-40">
-      <div className="flex flex-col">
-        <h2 className="lg:text-[10rem] leading-none text-[6rem] md:text-[8rem] text-start"
+      <div className="flex flex-col gap-5 lg:gap-0">
+        <h2 className="lg:text-[10rem] leading-none text-[4rem] md:text-[8rem] text-start" 
          data-aos="fade-in"
          data-aos-delay="100"
          data-aos-easing="ease-in-sine"
@@ -16,7 +16,7 @@ export default function ProjectsSection(): JSX.Element {
          data-aos-delay="200"
          data-aos-easing="ease-in-sine"
          data-aos-duration="5000">
-          <div className="hidden-image border-8 border-black w-48 h-1 mt-2"></div>
+          <div className="hidden-image border-8 border-black w-48 h-1 mt-2 hidden lg:flex"></div>
           <div className="flex flex-row justify-between gap-7 flex-wrap w-full items-end">
             <p className="text-start max-w-[600px] text-xl lg:text-2xl">
               I've had the opportunity to work on some exciting projects over

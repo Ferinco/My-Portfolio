@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import { useAppContext } from "../context"
-import { ProjectData, ProjectImages } from "../Data"
+import { ProjectData, ProjectImages } from "../data/projectsData"
 import Button from "./button";
 
 export default function ZoomedDiv(): JSX.Element {
@@ -10,7 +10,7 @@ export default function ZoomedDiv(): JSX.Element {
     return (
         <>
 
-            <div className="w-screen h-screen flex flex-col justify-between items-center p-5 absolute">
+            <div className="w-screen h-screen flex flex-col justify-between items-center p-5 absolute bg-[#ebebeb]">
                 <div className="flex justify-end w-full"><Icon icon="iconoir:cancel" width="1.7rem" height="1.7rem" style={{ color: "black" }} className="cursor-pointer" onClick={() => {
                     setOpenZoom(false)
                 }} /></div>
@@ -22,15 +22,15 @@ export default function ZoomedDiv(): JSX.Element {
                         </div>
                         <div>
                             <h1>{filteredImages[0].images.length + 1}</h1>
-                            <p>Images</p>
+                            <p>{filteredImages[0].images.length > 1 ? "images" : "image"}</p>
                         </div>
                     </div>
                     <div className="w-[400px] sm:w-auto xl:w-[900px] h-fit justify-center object-contain">
                         <img src={zoomedImage} />
                     </div>
-
+{
+    filteredImages[0].images.length > 0 ? 
                     <div className="sm:flex md:flex-col gap-2 justify-end flex-row hidden">
-
                         {filteredImages[0].images.map((url) => (
                             <div className="w-40 h-20 overflow-hidden cursor-pointer"
                                 onClick={() => {
@@ -39,7 +39,8 @@ export default function ZoomedDiv(): JSX.Element {
                             >
                                 <img src={url} className="object-contain" />
                             </div>))}
-                    </div>
+                    </div> : <div className="w-40 h-20 overflow-hidden cursor-pointer"></div>
+}
                 </div>
                 <div className="flex justify-between w-full">
                     <h1>
@@ -49,6 +50,8 @@ export default function ZoomedDiv(): JSX.Element {
                         className="text-base font-medium flex flex-row items-center justify-between gap-1"
                         title={"View Site"}
                         iconSize="text-sm"
+                        link={filteredImages[0].url}
+                        target="_blank"
                     ></Button>
                 </div>
             </div>

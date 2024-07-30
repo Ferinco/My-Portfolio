@@ -4,18 +4,18 @@ export default function WriteUp(): JSX.Element {
     return (
         <div className="px-3 md:px-6 lg:px-8 xl:px-14 mt-40">
             <div className="flex flex-col">
-                <h2 className="lg:text-[10rem] leading-none text-[6rem] md:text-[8rem] text-start" 
+                <h2 className="lg:text-[10rem] leading-none md:leading-[0.9] text-[4rem] md:text-[8rem] text-start" 
                     data-aos="fade-in"
                     data-aos-delay={100}
                     data-aos-easing="ease-in-sine">
                     Coding for <br /> impact.
                 </h2>
                 <div className="flex flex-col gap-7 w-100">
-                    <div className="hidden-image border-8 border-black w-48 h-1 mt-2"
+                    <div className="hidden-image border-8 border-black w-48 h-1 mt-2 hidden lg:flex"
                      data-aos="fade-in"
                      data-aos-delay={100}
                      data-aos-easing="ease-in-sine"></div>
-                    <div className="flex flex-row justify-between flex-wrap w-full items-end lg:mt-10 mt-0"
+                    <div className="flex flex-row justify-between flex-wrap w-full items-end lg:mt-6 mt-5"
                      data-aos="fade-in"
                      data-aos-delay={100}
                      data-aos-easing="ease-in-sine">
@@ -27,15 +27,14 @@ export default function WriteUp(): JSX.Element {
                             design-focused teams to build transformative websites and
                             microsites that leave a lasting impression.
                         </p>
-                        {/* <div>Check Projects</div> */}
                     </div>
                 </div>
                 <div className="flex flex-col lg:flex-row gap-7 w-full lg:mt-10"
                  data-aos="fade-in"
                  data-aos-delay={100}
                  data-aos-easing="ease-in-sine">
-                    <div className="hidden-image border-8 border-transparent w-48 h-1 mt-2"></div>
-                    <div className="flex lg:flex-row flex-col gap-5 lg:gap-0 justify-between w-full items-start">
+                    <div className="hidden-image border-8 border-transparent w-48 h-1 mt-2 hidden lg:flex"></div>
+                    <div className="flex lg:flex-row flex-col gap-5 lg:gap-0 justify-between w-full items-start mt-5 lg:mt-0">
                         <p className="text-start text-xl lg:text-lg text-wrap lg:w-[32%] w-full">
                             Being an artist, working with a strong sense of artistry has
                             helped me deliver masterful projects over the years—crafting and

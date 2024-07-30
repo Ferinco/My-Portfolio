@@ -10,7 +10,7 @@ body {
   background-color: #f2f2f2;
     scroll-behavior: auto;
   cursor:default;
-
+color: black;
 }
 .preloader-span{
   font-weight: 600;
@@ -52,16 +52,13 @@ h4{
   background-color: transparent;
   background-image: radial-gradient(circle, #679046 0.1px, transparent 1px);
   background-size: 10px 10px; }
-  .Project{
-    background-color: transparent;
-    background-image: radial-gradient(circle, #679046 0.1px, transparent 1px);
-    background-size: 10px 10px; }
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
 span, p, h1,h2, h3, h4, h5 ,h6{
   margin: 0;
+  /* color: black !important; */
 }
 h1, .site-name{
   font-family: 'Bebas Neue', sans-serif;
@@ -111,7 +108,43 @@ h2{
 .active-link{
  border-bottom: 1px solid grey;
 }
-.active-link :hover{
 
-  
+label {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+label span {
+  background: #000;
+  border-radius: 4px;
+  height: 2px;
+  width: 100%;
+  transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+
+span:nth-of-type(2) {
+  margin-top: 6px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg) translate(2px);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+  transform: rotate(-45deg) translate(7px, -4px);
+}
+@media (max-width: 600px) {
+  .Home{
+    background: transparent;
+  }
 }
