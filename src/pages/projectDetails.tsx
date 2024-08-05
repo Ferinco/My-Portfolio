@@ -23,7 +23,7 @@ export default function Details(): JSX.Element {
                                 <Icon icon="fluent:arrow-turn-right-down-48-regular" width="50px" height="40px" style={{ color: "black" }} className="hidden lg:flex" />
                             </div>
                             <div className="flex flex-col lg:flex-row justify-between lg:items-end items-start gap-10 lg:gap-0 mt-10 lg:mt-0">
-                                <p className="text-start lg:w-[700px] text-xl lg:text-2xl">Fully designed and launched the school's website, ensuring a user-friendly and responsive interface. <br /> Implemented SEO best practices to enhance search engine visibility.
+                                <p className="text-start lg:w-[700px] text-xl lg:text-2xl">{project.did}
                                 </p>
                                 {
                                     project.subtitle === "ferinco" ? "" :

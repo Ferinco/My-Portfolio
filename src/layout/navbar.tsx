@@ -12,13 +12,13 @@ console.log(openNavbar)
   return (
     <div className="flex flex-col pr-3 md:pr-6 lg:pr-8 xl:pr-14 lg:gap-0 gap-6">
       <motion.a
-        className="logo-div w-[70px] h-[100px] bg-[#679046] text-white flex flex-col cursor-pointer"
+        className="logo-div w-[100px] h-[50px] bg-[#679046] text-white flex flex-col cursor-pointer justify-center font-semibold"
         initial={{ x: -100 }}
         animate={{ x: 0 }}
         transition={{ duration: 0.9 }}
         href="/"
       >
-        
+        ferinco.
       </motion.a>
       <div className="flex-row gap-8 justify-end items-end z-[999] hidden md:flex">
         {NavLinks.map((link, index) => (

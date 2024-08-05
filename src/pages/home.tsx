@@ -25,7 +25,7 @@ export default function Home(): JSX.Element {
           transition={{ delay: 0.3, duration: 0.5 }}
         >
           <HeroSection />
-          <PhotoGrid />
+          {/* <PhotoGrid /> */}
           <WriteUp />
           <ProjectsSection />
         </motion.div>

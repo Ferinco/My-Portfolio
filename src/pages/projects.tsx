@@ -55,7 +55,7 @@ export default function Projects(): JSX.Element {
                                                 data-aos-delay={150}
                                                 data-aos-easing="ease-in-sine">
                                                 {
-                                                    project.subtitle === "ferinco" ? <p>-</p> :
+                                                    project.subtitle === "ferinco" ? <p>-</p> : project.subtitle === "bato" ? <p className="font-medium text-sm">20% complete</p> :
                                                         <Button title="Visit Site" link={project.url} id="cap" className="text-xs lg:text-sm flex items-center gap-2 lg:py-2 py-1 lg:px-10 px-5 rounded-full bg-transparent border border-black text-black transition-all  duration-300 w-fit font-medium"
                                                             iconSize="text-[10px] lg:text-[14px]"
                                                             target="_blank"

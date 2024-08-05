@@ -7,6 +7,7 @@ interface ProjectInfo {
   role: string;
   tools: string[];
   images: string[];
+  did: string
 }
 interface ProjectImage {
   firstBanner: string;
@@ -19,12 +20,28 @@ interface ProjectImage {
 
 export const ProjectData: Array<ProjectInfo> = [
   {
+    image: "/images/seemax.png",
+    title: "seemax",
+    subtitle: "seemax",
+    about:
+      "Website to view get the latest movie releases, search through popular choices and watch trailers.",
+    url: "https://seemax.netlify.app",
+    role: "A",
+    tools: ["reactjs,", "tailwind css,", "context api"],
+    images: [
+        "/images/seemax.png",
+      "/images/seemax/banner2.png",
+      "/images/seemax/banner1.png",
+    ],
+    did: ""
+  },
+  {
     image: "/images/ferinstore.png",
     title: "clothify",
     subtitle: "clothify",
     about: "Website to shop for clothes and clothing items",
     url: "https://ferinstore.netlify.app",
-    role: "A",
+    role: "B",
     tools: ["reactjs,", "bootstrap css,", "context api"],
     images: [
         "/images/ferinstore.png",
@@ -32,22 +49,25 @@ export const ProjectData: Array<ProjectInfo> = [
       "/images/ferinstore/banner1.png",
       "/images/ferinstore/banner2.png",
     ],
+    did: ""
+
   },
+
   {
-    image: "/images/seemax.png",
-    title: "seemax",
-    subtitle: "seemax",
+    image: "/images/bato.png",
+    title: "Bato Footwears",
+    subtitle: "bato",
 
     about:
-      "Website to view get the latest movie releases, search through popular choices and watch trailers.",
+      "An ecommerce project from a shoemaker client.",
     url: "https://seemax.netlify.app",
-    role: "B",
-    tools: ["reactjs,", "tailwind css,", "context api"],
+    role: "C",
+    tools: ["vite + reactjs,", "tailwind css,", "context api", "redux"],
     images: [
-        "/images/seemax.png",
-      "/images/seemax/banner2.png",
-      "/images/seemax/banner1.png",
+
     ],
+    did: ""
+
   },
   {
     image: "/images/ferinco.png",
@@ -55,10 +75,12 @@ export const ProjectData: Array<ProjectInfo> = [
     subtitle: "ferinco",
     about: "A portfolio website built for myself.",
     url: "https://emmanuelferinco.vercel.app",
-    role: "C",
+    role: "D",
     tools: ["typescript,", "tailwind css,", "context api"],
     images: [
     ],
+    did: ""
+
   },
   {
     image: "/images/fgms.png",
@@ -66,13 +88,15 @@ export const ProjectData: Array<ProjectInfo> = [
     subtitle: "fgms",
     about: "School webiste built for Firdaus-Gate Model Schools.",
     url: "https://firdausgateschools.com",
-    role: "D",
+    role: "E",
     tools: ["reactjs,", "bootstrap css,", "redux", "context api"],
     images: [
       "/images/ferinstore/seemax3.png",
       "/images/ferinstore/seemax2.png",
       "/images/ferinstore/seemax2.png",
     ],
+    did: "Fully designed and launched the school's website, ensuring a user-friendly and responsive interface. Implemented SEO best practices to enhance search engine visibility."
+
   },
 ];
 
