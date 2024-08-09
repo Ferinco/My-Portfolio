@@ -1,7 +1,5 @@
-import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
-import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useAppContext } from "../context";
 import { NavLinks } from "../data/navigators";
 
@@ -44,13 +42,16 @@ export default function Navbar(): JSX.Element {
         /> */}
       </div>
       <div className="flex md:hidden justify-end">
-      <label htmlFor="check" onClick={()=>{
-        openNavbar == true ? setOpenNavbar(false) : setOpenNavbar(true)
-      }}>
-        <input type="checkbox" id="check" />
-        <span></span>
-        <span></span>
-      </label>
+        <label
+          htmlFor="check"
+          onClick={() => {
+            openNavbar == true ? setOpenNavbar(false) : setOpenNavbar(true);
+          }}
+        >
+          <input type="checkbox" id="check" />
+          <span></span>
+          <span></span>
+        </label>
       </div>
     </div>
   );

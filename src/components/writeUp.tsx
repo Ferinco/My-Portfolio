@@ -1,9 +1,6 @@
-import React from "react";
-import { motion } from 'framer-motion'
 export default function WriteUp(): JSX.Element {
     return (
-        <div className="px-3 md:px-6 lg:px-8 xl:px-14 mt-40">
-            <div className="flex flex-col">
+            <div className="flex flex-col mt-40 lg:mt-96">
                 <h2 className="lg:text-[10rem] leading-none md:leading-[0.9] text-[4rem] md:text-[8rem] text-start font-medium lg:font-bold" 
                     data-aos="fade-in"
                     data-aos-delay={100}
@@ -51,6 +48,5 @@ export default function WriteUp(): JSX.Element {
                     </div>
                 </div>
             </div>
-        </div>
     );
 }

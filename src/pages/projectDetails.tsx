@@ -3,7 +3,6 @@ import { ProjectData, ProjectImages } from "../data/projectsData";
 import { Icon } from "@iconify/react";
 import Button from "../custom/button";
 import { BigTile, SmallTile } from "../custom/imageTile";
-import ProjectTile from "../custom/projectTile";
 import { useAppContext } from "../context";
 
 export default function Details(): JSX.Element {

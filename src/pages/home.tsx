@@ -19,7 +19,7 @@ export default function Home(): JSX.Element {
         <Preloader />
       ) : (
         <motion.div
-          className="Home py-9 mt-[70px]"
+          className="Home py-9 mt-[70px] px-3 md:px-6 lg:px-8 xl:px-14 overflow-x-hidden overflow-y-hidden"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}

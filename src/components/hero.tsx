@@ -18,7 +18,7 @@ export default function HeroSection(): JSX.Element {
     show: { y: 0, rotateZ: 0, opacity: 1, z: 0 },
   };
   return (
-    <div className="wrapper px-3 md:px-6 lg:px-8 xl:px-14 overflow-x-hidden overflow-y-hidden">
+    <div className="">
       <div className="flex flex-col text-start gap-5">
         <div className="flex flex-col sm:flex-col text-start gap-0">
           <motion.div variants={container} initial="hidden" animate="show"

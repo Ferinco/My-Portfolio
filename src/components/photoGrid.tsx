@@ -8,13 +8,21 @@ export default function PhotoGrid(): JSX.Element {
     //     <div className="h-[270px] w-full border-2 border-b-0 border-red-400 hidden lg:flex"></div>
     //     </div>
     // </div>
-    <div className="px-3 md:px-6 lg:px-8 xl:px-14 flex flex-col md:flex-row gap-5 md:mt-20 mt-12">
-      <div className="w-full md:w-4/6 h-80 lg:h-[400px] rounded-lg overflow-hidden">
-      <img
+    <div className="flex flex-col md:flex-row gap-5 mt-12">
+      <div
+        className="w-full md:w-4/6 h-80 lg:h-[400px] rounded-lg overflow-hidden"
+        data-aos="fade-in"
+        data-aos-easing="ease-in-sine"
+      >
+        <img
           src="images/hero-1.jpg"
           className="w-full  h-full block object-cover object-top rounded-lg"
-        /></div>
-      <div className="w-full md:w-2/6 lg:h-[400px] md:h-80 h-64">
+        />
+      </div>
+      <div className="w-full md:w-2/6 lg:h-[400px] md:h-80 h-64"
+      data-aos="fade-in"
+      data-aos-delay={100}
+      data-aos-easing="ease-in-sine">
         <img
           src="images/hero-1.jpg"
           className="w-full  h-full block object-cover object-top rounded-lg"
