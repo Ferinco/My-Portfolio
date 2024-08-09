@@ -29,7 +29,7 @@ export default function Footer(): JSX.Element {
                     </div>
                     <div className="flex flex-col lg:w-[20%] gap-2 md:w-[35%] w-[100%]">
                         {
-                            SocialLinks.map((social) => (
+                            SocialLinks.map((social, index) => (
                                 <Button
                                     className="social-link lg:text-4xl text-3xl flex flex-row items-center justify-between"
                                     id={social.name}
@@ -37,6 +37,7 @@ export default function Footer(): JSX.Element {
                                     iconSize="text-xl"
                                     target="_blank"
                                     link={social.path}
+                                    key={index}
                                 ></Button>
                             ))
                         }

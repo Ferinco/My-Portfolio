@@ -24,7 +24,7 @@ export const ProjectData: Array<ProjectInfo> = [
     title: "seemax",
     subtitle: "seemax",
     about:
-      "Website to view get the latest movie releases, search through popular choices and watch trailers.",
+      "Website to check the latest movie releases, search through popular choices and watch trailers.",
     url: "https://seemax.netlify.app",
     role: "A",
     tools: ["reactjs,", "tailwind css,", "context api"],
@@ -36,32 +36,14 @@ export const ProjectData: Array<ProjectInfo> = [
     did: ""
   },
   {
-    image: "/images/ferinstore.png",
-    title: "clothify",
-    subtitle: "clothify",
-    about: "Website to shop for clothes and clothing items",
-    url: "https://ferinstore.netlify.app",
-    role: "B",
-    tools: ["reactjs,", "bootstrap css,", "context api"],
-    images: [
-        "/images/ferinstore.png",
-      "/images/ferinstore/banner3.png",
-      "/images/ferinstore/banner1.png",
-      "/images/ferinstore/banner2.png",
-    ],
-    did: ""
-
-  },
-
-  {
     image: "/images/bato.png",
     title: "Bato Footwears",
     subtitle: "bato",
 
     about:
-      "An ecommerce project from a shoemaker client.",
+      "An ecommerce website for a shoemaker client.",
     url: "https://seemax.netlify.app",
-    role: "C",
+    role: "B",
     tools: ["vite + reactjs,", "tailwind css,", "context api", "redux"],
     images: [
 
@@ -69,6 +51,25 @@ export const ProjectData: Array<ProjectInfo> = [
     did: ""
 
   },
+  {
+    image: "/images/fgms.png",
+    title: "Firdaus-Gate Model Schools",
+    subtitle: "fgms",
+    about: "School webiste built for Firdaus-Gate Model Schools.",
+    url: "https://firdausgateschools.com",
+    role: "C",
+    tools: ["reactjs,", "bootstrap css,", "redux", "context api"],
+    images: [
+      "/images/ferinstore/seemax3.png",
+      "/images/ferinstore/seemax2.png",
+      "/images/ferinstore/seemax2.png",
+    ],
+    did: "Fully designed and launched the school's website, ensuring a user-friendly and responsive interface. Implemented SEO best practices to enhance search engine visibility."
+
+  },
+
+
+
   {
     image: "/images/ferinco.png",
     title: "Ferinco's Portfolio Website",
@@ -83,21 +84,23 @@ export const ProjectData: Array<ProjectInfo> = [
 
   },
   {
-    image: "/images/fgms.png",
-    title: "Firdaus-Gate Model Schools",
-    subtitle: "fgms",
-    about: "School webiste built for Firdaus-Gate Model Schools.",
-    url: "https://firdausgateschools.com",
+    image: "/images/ferinstore.png",
+    title: "clothify",
+    subtitle: "clothify",
+    about: "An online fashion store",
+    url: "https://ferinstore.netlify.app",
     role: "E",
-    tools: ["reactjs,", "bootstrap css,", "redux", "context api"],
+    tools: ["reactjs,", "bootstrap css,", "context api"],
     images: [
-      "/images/ferinstore/seemax3.png",
-      "/images/ferinstore/seemax2.png",
-      "/images/ferinstore/seemax2.png",
+        "/images/ferinstore.png",
+      "/images/ferinstore/banner3.png",
+      "/images/ferinstore/banner1.png",
+      "/images/ferinstore/banner2.png",
     ],
-    did: "Fully designed and launched the school's website, ensuring a user-friendly and responsive interface. Implemented SEO best practices to enhance search engine visibility."
+    did: ""
 
   },
+
 ];
 
 export const ProjectImages: Array<ProjectImage> = [

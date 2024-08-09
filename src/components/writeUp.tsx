@@ -36,7 +36,7 @@ export default function WriteUp(): JSX.Element {
                     <div className="hidden-image border-8 border-transparent w-48 h-1 mt-2 hidden lg:flex"></div>
                     <div className="flex lg:flex-row flex-col gap-5 lg:gap-0 justify-between w-full items-start mt-5 lg:mt-0">
                         <p className="text-start text-xl lg:text-lg text-wrap lg:w-[32%] w-full">
-                            Being an artist, working with a strong sense of artistry has
+                            Being a frontend dev, I've always worked with a strong sense of artistry; this has
                             helped me deliver masterful projects over the years—crafting and
                             solving problems to enhance user experience.{" "}
                         </p>
