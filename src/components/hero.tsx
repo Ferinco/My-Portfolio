@@ -21,16 +21,23 @@ export default function HeroSection(): JSX.Element {
     <div className="wrapper px-3 md:px-6 lg:px-8 xl:px-14 overflow-x-hidden overflow-y-hidden">
       <div className="flex flex-col text-start gap-5">
         <div className="flex flex-col sm:flex-col text-start gap-0">
-          <motion.div variants={container} initial="hidden" animate="show">
-            <h1 className="xl:text-[25rem] lg:text-[20rem] sm:text-[7rem] text-[6rem] md:text-[14rem] tracking-normal lg:text-pretty md:text-balance font-medium md:justify-center text-wrap lg:tracking-normal leading-tight">
-              ferinco.
+          <motion.div variants={container} initial="hidden" animate="show"
+          className="xl:text-[25rem] lg:text-[20rem] sm:text-[7rem] text-[6rem] md:text-[14rem] tracking-normal lg:text-pretty md:text-balance font-medium md:justify-center text-wrap lg:tracking-normal md:leading-tight leading-[0.9]">
+            <h1 className=" ">
+              ferinco<span className="inline-block md:hidden">,</span><span className="md:inline-block hidden">.</span>
+            </h1>
+            <h1 className="block md:hidden">
+              a frontend
+            </h1>
+            <h1 className="block md:hidden">
+              developer.
             </h1>
             
           </motion.div>
         </div>
-        <div className="xl:hidden flex flex-col md:mt-11 lg:gap-9 gap-7">
+        <div className="md:hidden flex flex-col md:mt-11 lg:gap-9 gap-7">
           <p className="lg:text-Paragraph-md md:text-Paragraph-sm text-Paragraph-sm space-x-4 text-wrap text-2xl md:text-4xl leading-tight md:leading-normal ms:w-[75%] w-full">
-            A Frontend developer that conjures innovation to create
+            I conjure innovation to create
             extraordinary experiences.
           </p>
           {/* <Button

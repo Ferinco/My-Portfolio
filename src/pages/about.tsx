@@ -2,27 +2,17 @@ import { Icon } from "@iconify/react";
 import PhotoGrid from "../components/photoGrid";
 import Button from "../custom/button";
 import { motion } from "framer-motion";
+import { SubHeader } from "../custom/headers";
 export default function About(): JSX.Element {
   return (
     <motion.div
-      className="Home pt-5 pb-10  mt-[70px]"
+      className="Home pt-5 pb-10  mt-[70px] md:px-6 lg:px-8 xl:px-6 overflow-x-hidden overflow-y-hidden px-3"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.3, duration: 0.5 }}
     >
-      <div className="sm:px-0 md:px-6 lg:px-8 xl:px-6 overflow-x-hidden overflow-y-hidden px-3">
-        <div className="flex flex-row gap-10 items-baseline">
-          <h4 className="text-start lg:text-[17rem] text-[6rem] sm:text-[8rem] md:text-[14rem] lg:font-medium tracking-tighter">
-            About{" "}
-          </h4>
-          <Icon
-            icon="fluent:arrow-turn-right-down-48-regular"
-            width="35px"
-            height="30px"
-            style={{ color: "black" }}
-            className="hidden lg:flex"
-          />
-        </div>
+      <div className="">
+        <SubHeader title="About" />
         <div className="flex flex-col lg:flex-row justify-between lg:mt-0 mt-[70px]">
           <div className="flex flex-col text-start text-5xl lg:text-7xl w-[40%]">
             <p>Plan.</p>
@@ -54,17 +44,7 @@ export default function About(): JSX.Element {
             </div>
           </div>
         </div>
-        <div className="images flex flex-col lg:flex-row mt-20 h-fit justify-between gap-7 lg:gap-0">
-          <div className="image-1 border-2 border-red-500 lg:w-[70%] h-[400px]"></div>
-          <div className="flex flex-col h-[400px] lg:w-[27%] justify-between">
-            <div className="border-2 border-red-500 h-[40%] hidden lg:flex"></div>
-            <div className="border-2 border-red-500 h-[57%]"></div>
-          </div>
-        </div>
-        {/* <div className="mt-[70px]">
-
-                <PhotoGrid/>
-                </div> */}
+        <PhotoGrid />
         <div className="employ flex flex-col lg:flex-row mt-20 h-fit justify-between">
           <div className="flex flex-col text-start lg:gap-24 gap-4">
             <p>Hire me</p>
@@ -83,10 +63,12 @@ export default function About(): JSX.Element {
             <p>Contact</p>
             <div>
               <p className="text-2xl">Send me an email</p>
-              <a className="text-start text-3xl text-[rgb(0, 105, 255)] email-link" href="mailto:ferinco001@gmail.com">
+              <a
+                className="text-start text-3xl text-[rgb(0, 105, 255)] email-link"
+                href="mailto:ferinco001@gmail.com"
+              >
                 ferinco001@gmail.com
               </a>
-              {/* <p>Hire me, so I can afford starlink.</p> */}
             </div>
           </div>
         </div>

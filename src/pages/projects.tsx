@@ -4,6 +4,7 @@ import ProjectTile from "../custom/projectTile";
 import { ProjectData } from "../data/projectsData";
 import { Separation } from "../custom/separationDiv";
 import { motion } from "framer-motion"
+import { SubHeader } from "../custom/headers";
 
 
 
@@ -14,10 +15,7 @@ export default function Projects(): JSX.Element {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}>
             <div className='sm:px-0 md:px-6 lg:px-8 xl:px-6 overflow-x-hidden overflow-y-hidden px-3'>
-                <div className="flex flex-row gap-10 items-baseline">
-                    <h4 className="text-start lg:text-[15rem] text-[6rem] sm:text-[8rem] md:text-[14rem] font-medium tracking-tighter">Projects</h4>
-                    <Icon icon="fluent:arrow-turn-right-down-48-regular" width="35px" height="30px" style={{ color: "black" }} />
-                </div>
+<SubHeader title="Projects"/>
                 <div className="mt-[70px]">
                     <div className="flex flex-row justify-between items-center">
                         <p className="text-start max-w-xl text-xl lg:text-2xl">I've worked on various projects over the years, personal and official. Check out some of the ones I am permitted to share here</p>
