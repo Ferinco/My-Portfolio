@@ -24,7 +24,7 @@ export default function HeroSection(): JSX.Element {
           <motion.div variants={container} initial="hidden" animate="show"
           className="xl:text-[25rem] lg:text-[20rem] sm:text-[7rem] text-[6rem] md:text-[14rem] tracking-normal lg:text-pretty md:text-balance font-medium md:justify-center text-wrap lg:tracking-normal md:leading-tight leading-[0.9]">
             <h1 className=" ">
-              ferinco<span className="inline-block md:hidden">,</span><span className="md:inline-block hidden">.</span>
+              ferinco<span className="inline-block md:hidden">,</span>
             </h1>
             <h1 className="block md:hidden">
               a frontend
