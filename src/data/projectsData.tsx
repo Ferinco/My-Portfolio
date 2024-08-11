@@ -25,7 +25,7 @@ export const ProjectData: Array<ProjectInfo> = [
     subtitle: "seemax",
     about:
       "Website to check the latest movie releases, search through popular choices and watch trailers.",
-    url: "https://seemax.netlify.app",
+    url: "https://seemax.vercel.app",
     role: "A",
     tools: ["reactjs,", "tailwind css,", "context api"],
     images: [
@@ -42,7 +42,7 @@ export const ProjectData: Array<ProjectInfo> = [
 
     about:
       "An ecommerce website for a shoemaker client.",
-    url: "https://seemax.netlify.app",
+    url: "",
     role: "B",
     tools: ["vite + reactjs,", "tailwind css,", "context api", "redux"],
     images: [
