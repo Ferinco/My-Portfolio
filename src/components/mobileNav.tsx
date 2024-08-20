@@ -9,7 +9,7 @@ export default function MobileNav(): JSX.Element {
 
   return (
     <div
-      className={`h-[calc(100vh - 110px)] mt-[110px] z-[999999] w-screen left-0 bottom-0 top-0 absolute md:hidden bg-[#f2f2f2] p-3 ${
+      className={`h-screen mt-[110px] z-[999999] w-screen left-0 bottom-0 top-0 absolute md:hidden bg-[#f2f2f2] p-3 border-2 ${
         openNavbar ? "block" : "hidden"
       }`}
     >
