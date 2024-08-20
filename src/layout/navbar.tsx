@@ -2,10 +2,14 @@ import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { useAppContext } from "../context";
 import { NavLinks } from "../data/navigators";
+import { useRef, useState } from "react";
+import MobileNav from "../components/mobileNav";
 
 export default function Navbar(): JSX.Element {
   const { active, setActive, openNavbar, setOpenNavbar } = useAppContext();
   const location = useLocation();
+  const navbarRef = useRef(null);
+  console.log(openNavbar);
   return (
     <div className="flex flex-col px-3 md:px-6 lg:px-8 xl:px-14 lg:gap-0 gap-6 py-3">
       <motion.a
@@ -41,17 +45,19 @@ export default function Navbar(): JSX.Element {
           className="lg:flex lg:ml-14"
         /> */}
       </div>
-      <div className="flex md:hidden justify-end">
-        <label
-          htmlFor="check"
-          onClick={() => {
-            openNavbar == true ? setOpenNavbar(false) : setOpenNavbar(true);
-          }}
-        >
-          <input type="checkbox" id="check" />
-          <span></span>
-          <span></span>
-        </label>
+      <div className="flex flex-col md:hidden">
+        <div className="justify-end flex">
+          <div
+            className={`menu-toggle ${
+              openNavbar
+                ? "after:-rotate-45 before:rotate-45 after:w-full after:mt-0"
+                : "rotate-0 after:w-[70%] after:mt-2"
+            }`}
+            onClick={() =>
+              openNavbar ? setOpenNavbar(false) : setOpenNavbar(true)
+            }
+          />
+        </div>
       </div>
     </div>
   );
