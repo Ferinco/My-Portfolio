@@ -1,4 +1,3 @@
-import { Icon } from "@iconify/react";
 import Button from "../custom/button";
 import ProjectTile from "../custom/projectTile";
 import { ProjectData } from "../data/projectsData";
@@ -22,8 +21,8 @@ export default function Projects(): JSX.Element {
               I've worked on various projects over the years, personal and
               official. Check out some of the ones I am permitted to share here
             </p>
-            <p className="hidden lg:block text-start max-w-xl text-xl lg:text-2xl">
-              5 featured
+            <p className="hidden lg:block text-start max-w-xl text-xl">
+              {ProjectData.length} featured
             </p>
           </div>
           <div className="projects-body flex flex-col lg:gap-[100px] gap-[50px] mt-[70px]">

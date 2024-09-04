@@ -52,12 +52,26 @@ export const ProjectData: Array<ProjectInfo> = [
 
   },
   {
+    image: "/images/octodos.png",
+    title: "octodos",
+    subtitle: "octodos",
+    about:
+      "A Nigerian tech agency that builds software and handles projects for people.",
+    url: "https://octodos.vercel.app",
+    role: "C",
+    tools: ["vuejs,", "tailwind css,", "gsap"],
+    images: [
+    ],
+    did: ""
+
+  },
+  {
     image: "/images/fgms.png",
     title: "Firdaus-Gate Model Schools",
     subtitle: "fgms",
     about: "School webiste built for Firdaus-Gate Model Schools.",
     url: "https://firdausgateschools.com",
-    role: "C",
+    role: "D",
     tools: ["reactjs,", "bootstrap css,", "redux", "context api"],
     images: [
       "/images/ferinstore/seemax3.png",
@@ -76,7 +90,7 @@ export const ProjectData: Array<ProjectInfo> = [
     subtitle: "ferinco",
     about: "A portfolio website built for myself.",
     url: "https://emmanuelferinco.vercel.app",
-    role: "D",
+    role: "E",
     tools: ["typescript,", "tailwind css,", "context api"],
     images: [
     ],
@@ -89,7 +103,7 @@ export const ProjectData: Array<ProjectInfo> = [
     subtitle: "clothify",
     about: "An online fashion store",
     url: "https://ferinstore.netlify.app",
-    role: "E",
+    role: "F",
     tools: ["reactjs,", "bootstrap css,", "context api"],
     images: [
         "/images/ferinstore.png",
