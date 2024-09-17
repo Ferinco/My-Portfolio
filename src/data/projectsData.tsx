@@ -52,13 +52,29 @@ export const ProjectData: Array<ProjectInfo> = [
 
   },
   {
+    image: "/images/rent-soft.png",
+    title: "Rent-Soft",
+    subtitle: "rent-soft",
+
+    about:
+      "A website for renting apartments online.",
+    url: "",
+    role: "C",
+    tools: ["reactjs,", "tailwind css,", "redux"],
+    images: [
+
+    ],
+    did: ""
+
+  },
+  {
     image: "/images/octodos.png",
     title: "octodos",
     subtitle: "octodos",
     about:
       "A Nigerian tech agency that builds software and handles projects for people.",
     url: "https://octodos.vercel.app",
-    role: "C",
+    role: "D",
     tools: ["vuejs,", "tailwind css,", "gsap"],
     images: [
     ],
@@ -71,7 +87,7 @@ export const ProjectData: Array<ProjectInfo> = [
     subtitle: "fgms",
     about: "School webiste built for Firdaus-Gate Model Schools.",
     url: "https://firdausgateschools.com",
-    role: "D",
+    role: "E",
     tools: ["reactjs,", "bootstrap css,", "redux", "context api"],
     images: [
       "/images/ferinstore/seemax3.png",
@@ -90,7 +106,7 @@ export const ProjectData: Array<ProjectInfo> = [
     subtitle: "ferinco",
     about: "A portfolio website built for myself.",
     url: "https://emmanuelferinco.vercel.app",
-    role: "E",
+    role: "F",
     tools: ["typescript,", "tailwind css,", "context api"],
     images: [
     ],
@@ -103,7 +119,7 @@ export const ProjectData: Array<ProjectInfo> = [
     subtitle: "clothify",
     about: "An online fashion store",
     url: "https://ferinstore.netlify.app",
-    role: "F",
+    role: "G",
     tools: ["reactjs,", "bootstrap css,", "context api"],
     images: [
         "/images/ferinstore.png",
