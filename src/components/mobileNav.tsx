@@ -9,8 +9,8 @@ export default function MobileNav(): JSX.Element {
 
   return (
     <div
-      className={`h-[calc(100vh-109px)] mt-[110px] z-[999999] w-screen left-0 bottom-0 top-0 fixed md:hidden bg-[#f2f2f2] p-3 border-2 transition-all duration-150 ${
-        openNavbar ? "flex flex-col justify-between" : "hidden transition-all duration-150"
+      className={`h-auto mt-[110px] z-[999999] w-screen left-0 bottom-0 top-0 fixed md:hidden bg-[#f2f2f2] p-3 border-2 transition-all duration-150 ${
+        openNavbar ? "flex flex-col" : "hidden transition-all duration-150"
       }`}
     >
       <div className="nav-list flex flex-col justify-start items-start gap-3">
@@ -21,7 +21,7 @@ export default function MobileNav(): JSX.Element {
           </a>
         ))}
       </div>
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 mt-auto">
       <div className="flex gap-1">
       <Icon icon="system-uicons:mail" width="2.1em" height="2.1em"  style={{color: "gray"}} />
         <a
