@@ -4,7 +4,7 @@ import { SocialLinks } from "../data/socials";
 export default function Contact(): JSX.Element {
 
   return (
-    <div>
+    <div className="px-3 md:px-6 lg:px-8 xl:px-14">
         <div className="flex flex-col gap-5 mt-[100px]">
       <p className="text-center text-3xl">
         I'm currently seeking a full-time position but I am also available for
