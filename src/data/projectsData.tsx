@@ -7,7 +7,7 @@ interface ProjectInfo {
   role: string;
   tools: string[];
   images: string[];
-  did: string
+  did: string;
 }
 interface ProjectImage {
   firstBanner: string;
@@ -29,43 +29,35 @@ export const ProjectData: Array<ProjectInfo> = [
     role: "A",
     tools: ["reactjs,", "tailwind css,", "context api"],
     images: [
-        "/images/seemax.png",
+      "/images/seemax.png",
       "/images/seemax/banner2.png",
       "/images/seemax/banner1.png",
     ],
-    did: ""
+    did: "",
   },
   {
     image: "/images/bato.png",
     title: "Bato Footwears",
     subtitle: "bato",
 
-    about:
-      "An ecommerce website for a shoemaker client.",
+    about: "An ecommerce website for a shoemaker client.",
     url: "",
     role: "B",
-    tools: ["vite + reactjs,", "tailwind css,", "context api", "redux"],
-    images: [
-
-    ],
-    did: ""
-
+    tools: ["vite + reactjs,", "tailwind css,", "context api"],
+    images: [],
+    did: "",
   },
   {
     image: "/images/rent-soft.png",
     title: "Rent-Soft",
     subtitle: "rent-soft",
 
-    about:
-      "A website for renting apartments online.",
+    about: "A website for renting apartments online.",
     url: "",
     role: "C",
-    tools: ["reactjs,", "tailwind css,", "redux"],
-    images: [
-
-    ],
-    did: ""
-
+    tools: ["reactjs,", "tailwind css,", "redux", "mongodb", "nodejs"],
+    images: [],
+    did: "",
   },
   {
     image: "/images/octodos.png",
@@ -76,10 +68,8 @@ export const ProjectData: Array<ProjectInfo> = [
     url: "https://octodos.vercel.app",
     role: "D",
     tools: ["vuejs,", "tailwind css,", "gsap"],
-    images: [
-    ],
-    did: ""
-
+    images: [],
+    did: "",
   },
   {
     image: "/images/fgms.png",
@@ -88,17 +78,21 @@ export const ProjectData: Array<ProjectInfo> = [
     about: "School webiste built for Firdaus-Gate Model Schools.",
     url: "https://firdausgateschools.com",
     role: "E",
-    tools: ["reactjs,", "bootstrap css,", "redux", "context api"],
+    tools: [
+      "javascript,",
+      "reactjs,",
+      "nodejs,",
+      "bootstrap css,",
+      "redux",
+      "mongodb,",
+    ],
     images: [
       "/images/ferinstore/seemax3.png",
       "/images/ferinstore/seemax2.png",
       "/images/ferinstore/seemax2.png",
     ],
-    did: "Fully designed and launched the school's website, ensuring a user-friendly and responsive interface. Implemented SEO best practices to enhance search engine visibility."
-
+    did: "Fully designed and launched the school's website, ensuring a user-friendly and responsive interface. Implemented SEO best practices to enhance search engine visibility.",
   },
-
-
 
   {
     image: "/images/ferinco.png",
@@ -108,29 +102,25 @@ export const ProjectData: Array<ProjectInfo> = [
     url: "https://emmanuelferinco.vercel.app",
     role: "F",
     tools: ["typescript,", "tailwind css,", "context api"],
-    images: [
-    ],
-    did: ""
-
+    images: [],
+    did: "",
   },
   {
     image: "/images/ferinstore.png",
     title: "clothify",
     subtitle: "clothify",
     about: "An online fashion store",
-    url: "https://ferinstore.netlify.app",
+    url: "",
     role: "G",
     tools: ["reactjs,", "bootstrap css,", "context api"],
     images: [
-        "/images/ferinstore.png",
+      "/images/ferinstore.png",
       "/images/ferinstore/banner3.png",
       "/images/ferinstore/banner1.png",
       "/images/ferinstore/banner2.png",
     ],
-    did: ""
-
+    did: "",
   },
-
 ];
 
 export const ProjectImages: Array<ProjectImage> = [

@@ -27,7 +27,7 @@ export default function About(): JSX.Element {
             </p>
             <div className="flex flex-row flex-wrap justify-between text-base">
               <p className="lg:w-[280px] text-xl lg:text-base w-full mt-2">
-                With my in-depth knowledge of various front-end technologies, I
+                With my in-depth knowledge of various full-stack technologies, I
                 am able to bring designs to life. Being able to innovate when
                 and after I plan and code has always helped me stand out.{" "}
               </p>
@@ -64,10 +64,10 @@ export default function About(): JSX.Element {
             <div>
               <p className="text-2xl">Send me an email</p>
               <a
-                className="text-start text-3xl text-[rgb(0, 105, 255)] email-link"
-                href="mailto:ferinco001@gmail.com"
+                className="text-start text-xl sm:text-2xl md:text-3xl text-[rgb(0, 105, 255)] email-link break-all"
+                href="mailto:emmanuelferrum003@gmail.com"
               >
-                ferinco001@gmail.com
+                emmanuelferrum003@gmail.com
               </a>
             </div>
           </div>

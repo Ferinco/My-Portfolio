@@ -8,10 +8,10 @@ import { useAppContext } from "../context";
 export default function Details(): JSX.Element {
   const { subtitle } = useParams();
   const Project = ProjectData.filter(
-    (project) => project.subtitle === subtitle
+    (project) => project.subtitle === subtitle,
   );
   const Images = ProjectImages.filter(
-    (project) => project.subtitle === subtitle
+    (project) => project.subtitle === subtitle,
   );
   const { setOpenZoom, setZoomedImage, setName, openZoom } = useAppContext();
   console.log(openZoom);
@@ -141,7 +141,7 @@ export default function Details(): JSX.Element {
           <div>
             <p className="text-2xl">Send me an email</p>
             <a className="text-start text-3xl text-[rgb(0, 105, 255)] email-link">
-              ferinco001@gmail.com
+              emmanuelferrum003@gmail.com
             </a>
           </div>
         </div>
