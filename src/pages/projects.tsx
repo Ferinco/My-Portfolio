@@ -81,6 +81,8 @@ export default function Projects(): JSX.Element {
                         <p className="font-medium text-sm">40% complete</p>
                       ) : project.subtitle === "rent-soft" ? (
                         <p className="font-medium text-sm">80% complete</p>
+                      ) : project.subtitle === "clothify" ? (
+                        <p className="font-medium text-sm">-</p>
                       ) : (
                         <Button
                           title="Visit Site"
