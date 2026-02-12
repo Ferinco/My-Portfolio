@@ -61,7 +61,6 @@ export default function ZoomedDiv(): JSX.Element {
           )}
         </div>
         <div className="flex justify-between w-full">
-          <h1></h1>
           {/* <a href="/work" className="text-base font-medium">Other Projects</a> */}
           <Button
             className="text-base font-medium flex flex-row items-center justify-between gap-1"
