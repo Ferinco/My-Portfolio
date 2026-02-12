@@ -53,6 +53,7 @@ export default function Details(): JSX.Element {
               <div className="xl:h-[620px] rounded-[15px] flex flex-col p-0 justify-between w-full relative project-tile mt-10 lg:mt-0">
                 <img
                   src={project.image}
+                  alt={`${project.title} detailed view`}
                   className="rounded-[15px] w-full h-full object-contain xl:object-cover content-center "
                 />
                 {/* <a href=""> */}
@@ -68,7 +69,6 @@ export default function Details(): JSX.Element {
                 {/* </a> */}
               </div>
               <div className="flex flex-row justify-between mt-5 md:items-start items-center">
-                <h1 className="text-start hidden lg:flex"></h1>
                 <p
                   className={
                     "text-start text-lg font-medium text-black md:max-w-[400px] w-[60%]"
@@ -77,8 +77,8 @@ export default function Details(): JSX.Element {
                   {project.about}
                 </p>
                 <div className="flex flex-col text-start">
-                  {project.tools.map((tool) => (
-                    <h1>{tool}</h1>
+                  {project.tools.map((tool, idx) => (
+                    <h1 key={idx}>{tool}</h1>
                   ))}
                 </div>
               </div>
@@ -86,7 +86,7 @@ export default function Details(): JSX.Element {
             {project.subtitle === "ferinco"
               ? ""
               : Images.map((image) => (
-                  <>
+                  <div key={image.subtitle}>
                     <div className="flex flex-row justify-between items-center mt-[70px]">
                       <h1 className="flex text-3xl w-[10%] text-start">
                         Project Images
@@ -116,7 +116,7 @@ export default function Details(): JSX.Element {
                         flexType="flex-col-reverse items-end"
                       ></BigTile>
                     </div>
-                  </>
+                  </div>
                 ))}
           </div>
         </div>
@@ -131,7 +131,10 @@ export default function Details(): JSX.Element {
               I am definitly that addition your team needs, I bring the skills,
               talent and creativity.
             </p>
-            <a className="text-start text-sm text-[rgb(0, 105, 255)] email-link font-semibold">
+            <a
+              href="mailto:emmanuelferrum003@gmail.com"
+              className="text-start text-sm text-[rgb(0, 105, 255)] email-link font-semibold"
+            >
               Hire me
             </a>
           </div>
@@ -140,7 +143,10 @@ export default function Details(): JSX.Element {
           <p>Contact</p>
           <div>
             <p className="text-2xl">Send me an email</p>
-            <a className="text-start text-3xl text-[rgb(0, 105, 255)] email-link">
+            <a
+              href="mailto:emmanuelferrum003@gmail.com"
+              className="text-start text-3xl text-[rgb(0, 105, 255)] email-link"
+            >
               emmanuelferrum003@gmail.com
             </a>
           </div>

@@ -1,6 +1,4 @@
-import { Icon } from "@iconify/react";
 import PhotoGrid from "../components/photoGrid";
-import Button from "../custom/button";
 import { motion } from "framer-motion";
 import { SubHeader } from "../custom/headers";
 export default function About(): JSX.Element {
@@ -54,7 +52,10 @@ export default function About(): JSX.Element {
                 I am definitly that addition your team needs, I bring the
                 skills, talent and creativity.
               </p>
-              <a className="text-start text-sm text-[rgb(0, 105, 255)] email-link font-semibold">
+              <a
+                href="mailto:emmanuelferrum003@gmail.com"
+                className="text-start text-sm text-[rgb(0, 105, 255)] email-link font-semibold"
+              >
                 Hire me
               </a>
             </div>

@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import Button from "../custom/button";
 import { SocialLinks } from "../data/socials";
 import { NavLinks } from "../data/navigators";
@@ -6,7 +5,7 @@ import { useAppContext } from "../context";
 import { useLocation } from "react-router-dom";
 
 export default function Footer(): JSX.Element {
-  const { active, setActive } = useAppContext();
+  const { setActive } = useAppContext();
   const location = useLocation();
   return (
     <div className="flex flex-col px-3 md:px-6 lg:px-8 xl:px-14 mt-[150px] pb-10">

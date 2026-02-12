@@ -1,11 +1,6 @@
 import "./App.css";
-import Footer from "./layout/footer";
-import HeroSection from "./components/hero";
-import Navbar from "./layout/navbar";
 import Home from "./pages/home";
-import { useEffect, useState } from "react";
-import Preloader from "./custom/preloader";
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./pages/about";
 import Projects from "./pages/projects";
 import Details from "./pages/projectDetails";
@@ -21,7 +16,7 @@ import Contact from "./pages/contact";
 import NoFooter from "./layout/noFooterLayout";
 function App() {
   AOS.init();
-  const { openZoom, active } = useAppContext();
+  const { openZoom } = useAppContext();
   return (
     <>
       {openZoom === false ? (

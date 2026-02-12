@@ -1,9 +1,7 @@
-import { useAppContext } from "../context";
 import ZoomedDiv from "../custom/ZoomedDiv";
 
-export default function Gallery (): JSX.Element {
-    const { openZoom } = useAppContext();
-    return (
+export default function Gallery(): JSX.Element {
+  return (
     //   <>
     //     {openZoom === false ? (
     //       <div className="App overflow-x-hidden">
@@ -12,6 +10,6 @@ export default function Gallery (): JSX.Element {
     //       <ZoomedDiv />
     //     )}
     //   </>
-    <ZoomedDiv/>
-    );
+    <ZoomedDiv />
+  );
 }

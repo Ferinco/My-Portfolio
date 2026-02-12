@@ -1,4 +1,3 @@
-import Button from "../custom/button";
 import { motion } from "framer-motion";
 export default function HeroSection(): JSX.Element {
   const container = {
@@ -11,11 +10,6 @@ export default function HeroSection(): JSX.Element {
         duration: 0.01,
       },
     },
-  };
-
-  const item = {
-    hidden: { y: 10, rotateZ: 15, opacity: 0, z: 5 },
-    show: { y: 0, rotateZ: 0, opacity: 1, z: 0 },
   };
   return (
     <div className="">

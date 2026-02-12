@@ -16,16 +16,20 @@ export default function PhotoGrid(): JSX.Element {
       >
         <img
           src="images/hero-1.jpg"
-          className="w-full  h-full block object-cover object-top rounded-lg"
+          alt="Developer hero screenshot 1"
+          className="w-full h-full block object-cover object-top rounded-lg"
         />
       </div>
-      <div className="w-full md:w-2/6 lg:h-[400px] md:h-80 h-64"
-      data-aos="fade-in"
-      data-aos-delay={100}
-      data-aos-easing="ease-in-sine">
+      <div
+        className="w-full md:w-2/6 lg:h-[400px] md:h-80 h-64"
+        data-aos="fade-in"
+        data-aos-delay={100}
+        data-aos-easing="ease-in-sine"
+      >
         <img
           src="images/hero-1.jpg"
-          className="w-full  h-full block object-cover object-top rounded-lg"
+          alt="Developer hero screenshot 2"
+          className="w-full h-full block object-cover object-top rounded-lg"
         />
       </div>
     </div>

@@ -2,14 +2,13 @@ import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { useAppContext } from "../context";
 import { NavLinks } from "../data/navigators";
-import { useRef, useState } from "react";
-import MobileNav from "../components/mobileNav";
+import { useRef } from "react";
 
 export default function Navbar(): JSX.Element {
-  const { active, setActive, openNavbar, setOpenNavbar } = useAppContext();
+  const { setActive, openNavbar, setOpenNavbar } = useAppContext();
   const location = useLocation();
   const navbarRef = useRef(null);
-  console.log(openNavbar);
+  console.log(navbarRef);
   return (
     <div className="flex flex-col px-3 md:px-6 lg:px-8 xl:px-14 lg:gap-0 gap-6 py-3">
       <motion.a

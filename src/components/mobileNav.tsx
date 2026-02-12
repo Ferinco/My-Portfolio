@@ -5,7 +5,7 @@ import { SocialLinks } from "../data/socials";
 import Button from "../custom/button";
 
 export default function MobileNav(): JSX.Element {
-  const { openNavbar, setOpenNavbar } = useAppContext();
+  const { openNavbar } = useAppContext();
 
   return (
     <div
@@ -37,7 +37,12 @@ export default function MobileNav(): JSX.Element {
           </a>
         </div>
         <div className="flex justify-between items-baseline">
-          <a className="text-blue-600 underline mt-5">hire me</a>
+          <a
+            href="mailto:emmanuelferrum003@gmail.com"
+            className="text-blue-600 underline mt-5"
+          >
+            hire me
+          </a>
         </div>
         <div>
           {SocialLinks.map((social, index) => (
